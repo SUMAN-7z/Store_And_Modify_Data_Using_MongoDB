@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const chatSchema = new mongoose.Schema({
-    form: {
+    from: {
         type: String,
         required:true
     },
@@ -9,7 +9,7 @@ const chatSchema = new mongoose.Schema({
         type: String,
         required:true
     },
-    msg: {
+    message: {
         type: String,
         maxLength:50,
     },
@@ -17,7 +17,7 @@ const chatSchema = new mongoose.Schema({
         type: Date,
         required:true
     }
-})
+});
 
 const chat = mongoose.model("chat", chatSchema);
 module.exports = chat;
