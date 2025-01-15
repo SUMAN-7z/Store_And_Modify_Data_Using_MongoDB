@@ -21,16 +21,16 @@
                 </i>
             <p>
             <div class="msg">
-                <p >
+                <p>
                     <%= chat.message %>
                         <p>
-                            <form method="get" action="/chats/<%= chat._id %>/edit">
-                                <button>Edit</button>
-                            </form>
-                            <br>
-                            <form method="post" action="/chats/<%= chat._id %>?_method=Delete">
-                                <button>Delete</button>
-                            </form>
+                        <form method="get" action="/chats/<%= chat._id %>/edit">
+                            <button>Edit</button>
+                        </form>
+                        <br>
+                        <form method="post" action="/chats/<%= chat._id %>?_method=Delete">
+                            <button>Delete</button>
+                        </form>
             </div>
             <p>Resived by : <i>
                     <%= chat.to %>

@@ -23,10 +23,12 @@ h1 {
     color: brown;
     text-decoration: underline;
 }
-b{
+
+b {
     text-decoration: underline;
     color: brown;
 }
+
 button {
     border-radius: 5px;
 }
